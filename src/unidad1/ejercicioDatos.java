@@ -1,20 +1,13 @@
 package unidad1;
-
-import java.util.Scanner;
-
-public class ejercicioDatos { 
+public class ejercicioDatos {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Ingrese su nombre: ");
-        String nombre = scanner.nextLine();
-
-        System.out.print("Ingrese su edad: ");
-        int edad = scanner.nextInt();
-
-        System.out.print("Ingrese su altura en metros: ");
-        double altura = scanner.nextDouble();
-
-        System.out.println("Hola, " + nombre + ". Tienes " + edad + " años y mides " + altura + " metros.");
+        int[] numeros = {10, 20, 30, 40};
+        int sumaTotal = 0;
+        int longitudNumeros = numeros.length;
+        for (int i = 0; i < longitudNumeros ; i++) {
+            sumaTotal += numeros[i];
+        }
+        float promerdio = (float) sumaTotal / longitudNumeros;
+        System.out.println("el promedio de las numeros es: " + promerdio);
     }
 }
