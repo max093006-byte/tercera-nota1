@@ -1,6 +1,6 @@
 package unidad1;
 
-public class arreglos3 {
+public class practicaParcial {
     public static void main(String[] args) {
         int contadorEstudiantes = 67;
         double nota = 89.4;
